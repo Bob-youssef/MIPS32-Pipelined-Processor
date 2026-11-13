@@ -1,0 +1,37 @@
+# Simulation Outputs
+*.vvp
+*.vcd
+*.wlf
+transcript
+modelsim.ini
+
+# EDA Tool Working Directories
+work/
+work.*/
+xsim.dir/
+.Xil/
+msim/
+covhtmlreport/
+
+# Tool Logs
+*.log
+*.jou
+*.str
+
+# Synthesis Artifacts
+db/
+incremental_db/
+*.rpt
+*.summary
+*.done
+*.jdi
+*.pin
+*.qsf.bak
+*.qpf.bak
+
+# OS & Editor Artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
