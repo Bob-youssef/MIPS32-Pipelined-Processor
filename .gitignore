@@ -1,9 +1,11 @@
-# Simulation Outputs
+# Simulation Outputs & Traces
 *.vvp
 *.vcd
 *.wlf
 transcript
 modelsim.ini
+waves/vcd/*
+!waves/vcd/.gitkeep
 
 # EDA Tool Working Directories
 work/
