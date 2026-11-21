@@ -9,24 +9,27 @@ module tb_pc_reg;
     
     pc_reg uut(.clk(clk), .reset(reset), .PCNext(PCNext), .PCF(PCF)); 
 
-    initial clk = 0; always #5 clk=~clk; 
+    initial clk = 0; always #5 clk = ~clk; 
 
     initial begin 
         $dumpfile("waves/vcd/pc_reg_waves.vcd");
         $dumpvars(0, tb_pc_reg); 
         
-        clk = 0; reset = 1; 
-        PCNext = 32'h0; 
-        #15 
-        reset=0; 
+        reset  = 1; 
+        PCNext = 32'h00000000; 
+        #12; 
+        reset  = 0; 
+
+        PCNext = 32'h00000004; 
+        #10;
+        
+        PCNext = 32'h00000008; 
+        #10;
 
         PCNext = 32'hAAAAAAAA; 
-        #10
-        
-        PCNext = 32'h00000004; 
-        #10
+        #10;
 
         $finish;
     end
 
-endmodule 
+endmodule

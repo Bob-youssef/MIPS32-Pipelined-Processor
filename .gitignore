@@ -1,3 +1,7 @@
+# Documentation & Reference PDFs (keep out of repo)
+*.pdf
+*.zip
+
 # Simulation Outputs & Traces
 *.vvp
 *.vcd
