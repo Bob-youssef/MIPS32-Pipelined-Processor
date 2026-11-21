@@ -2,11 +2,11 @@ if {[file exists work]} {
     vdel -lib work -all
 }
 vlib work
-vlog rtl/sign_extend.v
-vlog tb/sign_extend_tb.v
-vsim -voptargs=+acc work.sign_extend_tb
+vlog rtl/register_file.v
+vlog tb/register_file_tb.v
+vsim -voptargs=+acc work.register_file_tb
 # add wave *
-do waves/sign_extend_wave.do
+do waves/register_file_wave.do
 
 run -all
 #quit -sim
