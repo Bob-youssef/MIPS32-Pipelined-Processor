@@ -63,30 +63,3 @@ end
 endmodule
 
 
-// wire  RegWriteD;
-// wire  MemtoRegD;
-// wire  MemWriteD;
-// wire  BranchD;
-// wire [3:0] ALUControlD;
-// wire  ALUSrcD;
-// wire  RegDstD;
-
-// always @(posedge clk or posedge reset) begin
-//     if(reset) begin
-//         RegWriteE<=0;
-//         MemtoRegE<=0;
-//         MemWriteE<=0;
-//         BranchE<=0;
-//         ALUControlE<=0;
-//         ALUSrcE<=0;
-//         RegDstE<=0;
-//     end else begin
-//         RegWriteE<=RegWriteD;
-//         MemtoRegE<=MemtoRegD;
-//         MemWriteE<=MemWriteD;
-//         BranchE<=BranchD;
-//         ALUControlE<=ALUControlD;
-//         ALUSrcE<=ALUSrcD;
-//         RegDstE<=RegDstD;
-//     end
-// end

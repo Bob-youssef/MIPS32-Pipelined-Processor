@@ -41,3 +41,124 @@ Thumbs.db
 desktop.ini
 .vscode/
 .idea/
+
+# ==========================================
+# QuestaSim / ModelSim Simulation Artifacts
+# ==========================================
+work/
+msim/
+*.wlf
+*.vstf
+*.vcd
+*.fsdb
+*.ucdb
+transcript
+vsim.wlf
+vsim_stacktrace.vstf
+modelsim.ini
+*.mti
+*.mpf
+*.cr.mti
+*.dat
+*.tdb
+*.adb
+*.cdb
+*.sdb
+*.fdb
+*.vdb
+*.cov
+covhtmlreport/
+questa.tops
+*.do.bak
+
+# ==========================================
+# HDL Linting Tools (SpyGlass, Verilator, etc.)
+# ==========================================
+# Synopsys SpyGlass
+spyglass-1/
+*.spyglass
+spyglass.log
+*.vdb/
+consolidated_reports/
+sg_shell_command.log
+
+# Verilator
+obj_dir/
+*.verilator*
+
+# General Lint & Synthesis Logs / Reports
+*.log
+*.rpt
+*.jou
+*.pb
+*.str
+*.html
+*.xml
+lint_reports/
+reports/
+logs/
+
+# ==========================================
+# Common EDA & OS Temporary Files
+# ==========================================
+*.bak
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# Questa Lint / Questa Qverify Artifacts
+# ==========================================
+.qverify/
+qcache/
+*.qverify
+qverify.log
+lint.rpt
+lint.log
+
+# ==========================================
+# QuestaSim / ModelSim Simulation Artifacts
+# ==========================================
+work/
+msim/
+*.wlf
+*.vstf
+*.fsdb
+*.ucdb
+transcript
+vsim.wlf
+vsim_stacktrace.vstf
+modelsim.ini
+*.mti
+*.mpf
+*.cr.mti
+*.dat
+*.tdb
+*.adb
+*.cdb
+*.sdb
+*.fdb
+*.vdb
+*.cov
+covhtmlreport/
+questa.tops
+
+# ==========================================
+# Waveforms (Keep waves/images/, Ignore dumps)
+# ==========================================
+waves/vcd/
+*.vcd
+
+# ==========================================
+# OS & Editor Temporary Files
+# ==========================================
+*.bak
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+ca_project_lint.prj
+lint.db

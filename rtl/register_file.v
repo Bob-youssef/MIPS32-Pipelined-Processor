@@ -8,8 +8,7 @@ module register_file (
     output [31:0] RD1,
     output [31:0] RD2
 );
-// reg  [31:0] registers [31:0] ;
-reg  [31:0][31:0] registers  ;
+reg [31:0] registers [0:31];
 assign RD1 = A1==0? 0 : registers [A1];
 assign RD2 = A2==0? 0 : registers [A2];
 
