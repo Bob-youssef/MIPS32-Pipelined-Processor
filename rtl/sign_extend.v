@@ -1,3 +1,6 @@
+// 16-to-32 bit immediate extender (ZeroExtD=1 for zero-ext, 0 for sign-ext)
+// inputs: ImmD, ZeroExtD    output: SignImmD
+
 module sign_extend (
     input [15:0] ImmD,
     input ZeroExtD,

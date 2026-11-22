@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module sign_extend_tb ();
 
 reg [15:0] ImmD;
@@ -24,6 +26,9 @@ task check;
     end
 endtask
 initial begin
+    $dumpfile("waves/vcd/sign_extend_waves.vcd");
+    $dumpvars(0, sign_extend_tb);
+
     repeat(10) begin
         ZeroExtD=1;
         ImmD=$random;

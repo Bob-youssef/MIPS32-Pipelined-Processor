@@ -1,3 +1,7 @@
+// ID stage + ID/EX pipeline register (control_unit, register_file, sign_extend, PCJumpD)
+// inputs: clk, reset, instrD, PCPlus4D, WriteRegW, WE3, ResultW
+// outputs: RD1E, RD2E, RegWriteE..RegDstE, JumpD, PCJumpD, RtE, RdE, SignImmE, PCPlus4E
+
 module decode (
     input clk,
     input reset,

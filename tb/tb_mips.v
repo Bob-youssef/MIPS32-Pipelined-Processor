@@ -38,12 +38,13 @@ module tb_mips;
     initial begin
         errors = 0;
         if ($test$plusargs("test2")) begin
-            test = 2; hexfile = "test2.hex"; cycles = 34;
+            test = 2; hexfile = "test/test2.hex"; cycles = 34;
+            $dumpfile("waves/vcd/mips_test2.vcd");
         end else begin
-            test = 1; hexfile = "test1.hex"; cycles = 22;
+            test = 1; hexfile = "test/test1.hex"; cycles = 22;
+            $dumpfile("waves/vcd/mips_test1.vcd");
         end
 
-        $dumpfile("waves/vcd/mips.vcd");
         $dumpvars(0, tb_mips);
 
         clk = 0;

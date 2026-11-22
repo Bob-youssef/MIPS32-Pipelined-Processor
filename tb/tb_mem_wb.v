@@ -22,7 +22,7 @@ module tb_mem_wb;
 
     initial begin
         $dumpfile("waves/vcd/mem_wb_waves.vcd");
-        $dumpvars(1, tb_mem_wb);
+        $dumpvars(0, tb_mem_wb);
 
         reset     = 1'b1;
         RegWriteM = 1'b0;

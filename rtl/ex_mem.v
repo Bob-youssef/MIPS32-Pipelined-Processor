@@ -1,4 +1,6 @@
-// EX/MEM Pipeline Register
+// EX/MEM pipeline register (passes EX control and data signals to MEM on posedge clk)
+// inputs: clk, reset, RegWriteE, MemWriteE, MemtoRegE, BranchE, ZeroE, ALUOutE, WriteDataE, PCBranchE, WriteRegE
+// outputs: RegWriteM, MemtoRegM, MemWriteM, BranchM, ALUOutM, WriteDataM, PCBranchM, WriteRegM, ZeroM
 
 module ex_mem (
     // all of these inputs are cominig from the EX stage

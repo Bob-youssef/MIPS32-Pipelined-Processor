@@ -55,6 +55,7 @@ module decode_tb;
     always #5 clk = ~clk;
 
     initial begin
+        #1
         $readmemh("memory/registers.mem", dut.register_file_0.registers);
     end
     // Check an output against its expected value
@@ -93,6 +94,9 @@ module decode_tb;
     endtask
 
     initial begin
+
+        $dumpfile("waves/vcd/decode_waves.vcd");
+        $dumpvars(0, decode_tb);
 
         // Initialize
         clk = 0;

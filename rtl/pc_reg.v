@@ -1,3 +1,6 @@
+// Program Counter register (updates on posedge clk, async reset to 0)
+// inputs: clk, reset, PCNext    output: PCF
+
 module pc_reg (
     input clk, reset, 
     input [31:0] PCNext,

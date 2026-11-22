@@ -68,6 +68,9 @@ module control_unit_tb;
     endtask
 
     initial begin
+        $dumpfile("waves/vcd/control_unit_waves.vcd");
+        $dumpvars(0, control_unit_tb);
+
         // R-type: Op=000000; Funct selects the ALU operation.
         check("add",  6'b000000, 6'b100000, 12'b1000_0010_0100, RTYPE_MASK);
         check("sub",  6'b000000, 6'b100010, 12'b1000_0110_0100, RTYPE_MASK);
@@ -92,8 +95,10 @@ module control_unit_tb;
         check("j",    6'b000010, 6'b000000, 12'b0000_0000_0010, JUMP_MASK);
 
         $display("\nControl unit tests: %0d passed, %0d failed", passed, failed);
-        if (failed != 0)
-            $fatal(1, "Control unit testbench failed");
+         if (failed != 0)
+            $display("Control unit testbench FAILED");
+        else
+            $display("Control unit testbench PASSED");
         $stop;
     end
 

@@ -46,6 +46,9 @@ module register_file_tb;
 
     initial begin
 
+        $dumpfile("waves/vcd/register_file_waves.vcd");
+        $dumpvars(0, register_file_tb);
+
         // Initialize inputs
         clk = 0;
         WE3 = 0;

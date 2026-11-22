@@ -1,3 +1,6 @@
+// Data memory (64x32 RAM, combinational read, synchronous posedge write)
+// inputs: clk, we, a, wd    output: rd
+
 module dmem (
     input clk, we, 
     input [31:0] a, 

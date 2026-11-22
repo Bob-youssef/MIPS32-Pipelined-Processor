@@ -1,3 +1,6 @@
+// Instruction memory (64x32 combinational ROM, word-addressed via a[7:2])
+// input: a    output: rd
+
 module imem #(
     parameter MEMFILE = "test/test1.hex"
 ) (

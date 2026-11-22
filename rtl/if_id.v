@@ -1,3 +1,6 @@
+// IF/ID pipeline register (latches fetched instruction and PC+4 on posedge clk)
+// inputs: clk, reset, InstrF, PCPlus4F    outputs: InstrD, PCPlus4D
+
 module if_id (
     input clk, reset, 
     input [31:0] InstrF, PCPlus4F,

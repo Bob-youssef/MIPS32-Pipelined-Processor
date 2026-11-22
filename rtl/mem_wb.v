@@ -1,4 +1,6 @@
-// MEM/WB Pipeline Register
+// MEM/WB pipeline register (passes MEM control and data signals to WB on posedge clk)
+// inputs: clk, reset, RegWriteM, MemtoRegM, ALUOutM, ReadDataM, WriteRegM
+// outputs: RegWriteW, MemtoRegW, ALUOutW, ReadDataW, WriteRegW
 
 module mem_wb (
     // Inputs coming from the MEM stage

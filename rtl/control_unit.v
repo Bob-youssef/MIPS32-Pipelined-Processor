@@ -1,3 +1,7 @@
+// Main decoder and ALU decoder for all 17 MIPS instructions + nop
+// inputs: Op, Funct
+// outputs: RegWriteD, MemtoRegD, MemWriteD, BranchD, ALUControlD, ALUSrcD, RegDstD, JumpD, ZeroExtD
+
 module control_unit (
     input [5:0] Op,
     input [5:0] Funct,
